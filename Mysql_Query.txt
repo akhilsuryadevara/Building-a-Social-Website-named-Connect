@@ -1,0 +1,45 @@
+create database connectnetwork;
+
+use connectnetwork;
+
+create table registration(
+	userName varchar(40),
+	firstName varchar(40),
+	lastName varchar(40),
+	email varchar(80),
+	password varchar(40),
+	repassword varchar(40),
+	birthday varchar(40),
+	gender varchar(40),
+	profilepic varchar(40),
+	city varchar(40),
+	school varchar(40),
+	userType varchar(40)
+);
+
+create table follow
+(
+username varchar(40),
+following varchar(40)
+);
+
+CREATE TABLE Post (
+	PostId int auto_increment not null ,
+    UserName varchar(40) not null,
+    PostText varchar(500),
+    PostDate varchar(40) not null,
+    PostLikeCount int not null default 0,
+    PostCommentCount int not null default 0,
+    PostImage varchar(40),
+	primary key(PostId,UserName));
+
+CREATE TABLE LiveFeed  
+(
+twit varchar(100)
+);    
+insert into LiveFeed set twit="Finance";
+
+CREATE TABLE Advertise (
+    AdUrl varchar(500),
+    AdImage varchar(40)
+);	

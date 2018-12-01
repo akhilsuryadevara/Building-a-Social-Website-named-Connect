@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  <welcome-file-list>
+    <welcome-file>Login</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>Home</servlet-name>
+  <servlet-class>Home</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Home</servlet-name>
+  <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+ 
+
+
+<servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LoginParser</servlet-name>
+  <servlet-class>LoginParser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginParser</servlet-name>
+  <url-pattern>/LoginParser</url-pattern>
+  </servlet-mapping>
+ <servlet>
+  <servlet-name>RegistrationParser</servlet-name>
+  <servlet-class>RegistrationParser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RegistrationParser</servlet-name>
+  <url-pattern>/RegistrationParser</url-pattern>
+  </servlet-mapping>
+ <servlet>
+  <servlet-name>Registration</servlet-name>
+  <servlet-class>Registration</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Registration</servlet-name>
+  <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Utilities</servlet-name>
+  <servlet-class>Utilities</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Utilities</servlet-name>
+  <url-pattern>/Utilities</url-pattern>
+  </servlet-mapping>
+  
+  
+	<servlet>
+		<servlet-name>WriteReview</servlet-name>
+		<servlet-class>WriteReview</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WriteReview</servlet-name>
+		<url-pattern>/WriteReview</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubmitReview</servlet-name>
+		<servlet-class>SubmitReview</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubmitReview</servlet-name>
+		<url-pattern>/SubmitReview</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewReview</servlet-name>
+		<servlet-class>ViewReview</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewReview</servlet-name>
+		<url-pattern>/ViewReview</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FindReviews</servlet-name>
+		<servlet-class>FindReviews</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FindReviews</servlet-name>
+		<url-pattern>/FindReviews</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DataVisualization</servlet-name>
+		<servlet-class>DataVisualization</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DataVisualization</servlet-name>
+		<url-pattern>/DataVisualization</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>AjaxUtilities</servlet-name>
+		<servlet-class>AjaxUtilities</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AjaxUtilities</servlet-name>
+		<url-pattern>/AjaxUtilities</url-pattern>
+	</servlet-mapping>
+
+	<!-- **************************************************************************************************** -->
+	<servlet>
+		<servlet-name>ShowWriteComment</servlet-name>
+		<servlet-class>ShowWriteComment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShowWriteComment</servlet-name>
+		<url-pattern>/ShowWriteComment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubmitComment</servlet-name>
+		<servlet-class>SubmitComment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubmitComment</servlet-name>
+		<url-pattern>/SubmitComment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateProfile</servlet-name>
+		<servlet-class>UpdateProfile</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateProfile</servlet-name>
+		<url-pattern>/UpdateProfile</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>SaveUpdateProfile</servlet-name>
+		<servlet-class>SaveUpdateProfile</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SaveUpdateProfile</servlet-name>
+		<url-pattern>/SaveUpdateProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangePassword</servlet-name>
+		<servlet-class>ChangePassword</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/ChangePassword</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Followers</servlet-name>
+		<servlet-class>Followers</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Followers</servlet-name>
+		<url-pattern>/Followers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RemoveFollower</servlet-name>
+		<servlet-class>RemoveFollower</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveFollower</servlet-name>
+		<url-pattern>/RemoveFollower</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Following</servlet-name>
+		<servlet-class>Following</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Following</servlet-name>
+		<url-pattern>/Following</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Unfollow</servlet-name>
+		<servlet-class>Unfollow</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Unfollow</servlet-name>
+		<url-pattern>/Unfollow</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FollowUser</servlet-name>
+		<servlet-class>FollowUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FollowUser</servlet-name>
+		<url-pattern>/FollowUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ShowPost</servlet-name>
+		<servlet-class>ShowPost</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShowPost</servlet-name>
+		<url-pattern>/ShowPost</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SaveFollowUser</servlet-name>
+		<servlet-class>SaveFollowUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SaveFollowUser</servlet-name>
+		<url-pattern>/SaveFollowUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubmitPost</servlet-name>
+		<servlet-class>SubmitPost</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubmitPost</servlet-name>
+		<url-pattern>/SubmitPost</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminLogin</servlet-name>
+		<servlet-class>AdminLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminLogin</servlet-name>
+		<url-pattern>/AdminLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManagePosts</servlet-name>
+		<servlet-class>ManagePosts</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManagePosts</servlet-name>
+		<url-pattern>/ManagePosts</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeletePost</servlet-name>
+		<servlet-class>DeletePost</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePost</servlet-name>
+		<url-pattern>/DeletePost</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CommentReport</servlet-name>
+		<servlet-class>CommentReport</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CommentReport</servlet-name>
+		<url-pattern>/CommentReport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserReport</servlet-name>
+		<servlet-class>UserReport</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserReport</servlet-name>
+		<url-pattern>/UserReport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PostReport</servlet-name>
+		<servlet-class>PostReport</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PostReport</servlet-name>
+		<url-pattern>/PostReport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageUser</servlet-name>
+		<servlet-class>ManageUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManageUser</servlet-name>
+		<url-pattern>/ManageUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteUser</servlet-name>
+		<servlet-class>DeleteUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteUser</servlet-name>
+		<url-pattern>/DeleteUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewSearchUser</servlet-name>
+		<servlet-class>ViewSearchUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewSearchUser</servlet-name>
+		<url-pattern>/ViewSearchUser</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>TrendingTweets</servlet-name>
+		<servlet-class>TrendingTweets</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TrendingTweets</servlet-name>
+		<url-pattern>/TrendingTweets</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>LikeCount</servlet-name>
+		<servlet-class>LikeCount</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LikeCount</servlet-name>
+		<url-pattern>/LikeCount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>NewAd</servlet-name>
+		<servlet-class>NewAd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NewAd</servlet-name>
+		<url-pattern>/NewAd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubmitAdvertise</servlet-name>
+		<servlet-class>SubmitAdvertise</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SubmitAdvertise</servlet-name>
+		<url-pattern>/SubmitAdvertise</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageAdvertise</servlet-name>
+		<servlet-class>ManageAdvertise</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManageAdvertise</servlet-name>
+		<url-pattern>/ManageAdvertise</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteAdvertise</servlet-name>
+		<servlet-class>DeleteAdvertise</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteAdvertise</servlet-name>
+		<url-pattern>/DeleteAdvertise</url-pattern>
+	</servlet-mapping>
+</web-app>

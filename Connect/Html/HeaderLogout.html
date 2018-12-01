@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Connect</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</head>
+<body>
+<script type = "text/javascript" src="searchjavascript.js"> </script>
+<script type="text/javascript">
+function incrementValue(postId)
+{
+    var value = parseInt(document.getElementById('number'+postId).value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number'+postId).value = value;
+    $.ajax({
+        url: "LikeCount",
+        type: "POST",
+        data: {postId : postId, value : value},
+        success: function (msg) {
+            disableLike(postId)            
+        },
+        error: function(){
+            console.log("error occurred while making ajax call;")
+        }
+    });
+}
+function  disableLike(postId){
+	document.getElementById('likebtnId'+postId).disabled = true;
+	document.getElementById('unlikebtnId'+postId).disabled = false;
+}
+function decrementValue(postId)
+{
+    var value = parseInt(document.getElementById('number'+postId).value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('number'+postId).value = value;
+    $.ajax({
+        url: "LikeCount",
+        type: "POST",
+        data: {postId : postId, value : value},
+        success: function (msg) {
+            enableLike(postId)            
+        },
+        error: function(){
+            console.log("error occurred while making ajax call;")
+        }
+    });
+}
+function  enableLike(postId){
+	document.getElementById('likebtnId'+postId).disabled = false;
+	document.getElementById('unlikebtnId'+postId).disabled = true;
+}
+
+</script>
+	<div id="container">
+		<header>
+			<header style="padding: 0px!important;">
+			<a href="Login"><img src="Html/images/logo.png" /></a> 	
+			<h2 style="top: -70px">Lets Make Friends</h2>
+
+		</header>
+		<nav>
+			<ul>
+				
+				

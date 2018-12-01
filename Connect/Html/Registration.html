@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Connect</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />	
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="content">
+		<h2 align="center" margin-top="60px">Registration Form</h2>
+		<form action="RegistrationParser" method="get" class="username">
+			<div class="container" align="center" style="width: 800px !important;">
+			<div class='box'><table  class='table' style='border:double'>
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Username</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="username" style='margin-left: 120px;' required >
+				</td>
+			</tr>	
+
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>First Name</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="firstname" style='margin-left: 120px;' required>
+				</td>
+			</tr>		
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Last Name</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="lastname" style='margin-left: 120px;' required>
+				</td>
+			</tr>
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Email</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="email"  style='margin-left: 120px;' required>
+				</td>
+			</tr>
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Password</b></label>
+				</td>
+				<td>	 
+					<input type="password" class="uname" name="password"  style='margin-left: 120px;' required>
+				</td>
+			</tr>		
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Re-Password</b></label>
+				</td>
+				<td>	 
+					<input type="password" class="uname" name="repassword"  style='margin-left: 120px;' required>
+				</td>
+			</tr>		
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Birthday</b></label>
+				</td>
+				<td>	 
+					<input type="date" class="uname" name="birthday"  style='margin-left: 120px;' required>
+				</td>
+			</tr>	
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Gender</b></label>
+				</td>
+				<td>	 
+					<select name="gender"
+						class='uname' style="width: 240px;margin-left: 120px;">
+						<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Other">Other</option>
+					</select>
+				</td>
+			</tr>	
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>Profile Photo</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="profilephoto"   style='margin-left: 120px;' required>
+				</td>
+			</tr>		
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>City</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="city"   style='margin-left: 120px;' required>
+				</td>
+			</tr>
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>School</b></label>
+				</td>
+				<td>	 
+					<input type="text" class="uname" name="school"   style='margin-left: 120px;' required>
+				</td>
+			</tr>	
+			<tr>	
+				<td style='vertical-align: middle;'>
+					<label><b>User Type</b></label>
+				</td>
+				<td>	 
+					<select name="usertype"
+						class='uname' style="width: 240px;margin-left: 120px; ">
+						<option value="User">User</option>
+					<option value="Admin">Admin</option></select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>	
+				<td>
+					<button class="lbutton" type="submit" value="login">Register</button>
+					<span class="psw">Already Have an Account?<a href="./Login">Login
+						here</a></span>
+				</td>
+			</tr>
+			</table>
+			</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
